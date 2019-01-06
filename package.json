@@ -1,0 +1,16 @@
+{
+  "name": "link-station-search",
+  "version": "1.0.0",
+  "description": "Search the most suitable (with most power) link station for a device at given point",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha \"**/*.spec.js\""
+  },
+  "author": "mike.danylov@gmail.com",
+  "license": "MIT",
+  "dedependencies": {},
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
+  }
+}
