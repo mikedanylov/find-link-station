@@ -2,10 +2,10 @@ const { Point } = require('./point');
 const { LinkStation } = require('./link-station');
 
 /**
- * Find the most powerfull link station within reach
+ * Find the most powerful link station within reach
  * @param {Array<Number>} pointParams array with point coordinates [x, y]
- * @param {Array<Number>} linkStationsParams array of stations with location coordinates
- * and reach parameters for each station [x, y, reach]
+ * @param {Array<Array<Number>>} linkStationsParams array of stations with location
+ * coordinates and reach parameters for each station [x, y, reach]
  */
 const findLinkStation = (pointParams, linkStationsParams) => {
   if (!pointParams || pointParams.length !== 2 || !linkStationsParams) {

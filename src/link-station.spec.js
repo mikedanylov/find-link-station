@@ -95,7 +95,7 @@ describe('LinkStation', () => {
     );
   });
 
-  it('getMaxPowerLinkStationForPoint static method should find most powerfull link station', () => {
+  it('getMaxPowerLinkStationForPoint static method should find most powerful link station', () => {
     const linkStation1 = new LinkStation(0, 0, 10);
     const linkStation2 = new LinkStation(5, 0, 12);
     const point = new Point(5, 2);

@@ -2,7 +2,7 @@
   "name": "link-station-search",
   "version": "1.0.0",
   "description": "Search the most suitable (with most power) link station for a device at given point",
-  "main": "index.js",
+  "main": "src/find-link-station.js",
   "scripts": {
     "test": "mocha \"**/*.spec.js\""
   },

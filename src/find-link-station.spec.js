@@ -22,7 +22,7 @@ describe('findLinkStation', () => {
     );
   });
 
-  it('should select the most powerfull station within reach', () => {
+  it('should select the most powerful station within reach', () => {
     const linkStationsParams = [[0, 0, 10], [20, 20, 5], [10, 0, 12]];
     expect(findLinkStation([5, 5], linkStationsParams)).to.be.equal(
       'Best link station for point 5, 5 is 10, 0 with power 12'

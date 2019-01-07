@@ -1,7 +1,8 @@
 class PointConstructorError extends Error {
   constructor() {
-    super('Invalid constructor parameters');
+    super();
     this.name = 'PointConstructorError';
+    this.message = 'Invalid constructor parameters';
   }
 }
 
@@ -9,14 +10,19 @@ module.exports.PointConstructorError = PointConstructorError;
 
 class PointDistanceError extends Error {
   constructor() {
-    super('Invalid parameters for target point to calculate distance');
+    super();
     this.name = 'PointDistanceError';
+    this.message = 'Invalid parameters for target point to calculate distance';
   }
 }
 
 module.exports.PointDistanceError = PointDistanceError;
 
 class Point {
+  /**
+   * @param {Number} x
+   * @param {Number} y
+   */
   constructor(x, y) {
     try {
       this.x = Number.parseFloat(x);
@@ -31,15 +37,11 @@ class Point {
   }
 
   /**
-   * Calculate distanse to the targetPoint
+   * Calculate distance to the targetPoint
    * @param {Point} targetPoint
    */
   getDistanceTo(targetPoint) {
-    if (
-      !targetPoint ||
-      Number.isNaN(Number.parseFloat(targetPoint.x)) ||
-      Number.isNaN(Number.parseFloat(targetPoint.y))
-    ) {
+    if (!targetPoint) {
       throw new PointDistanceError();
     }
 

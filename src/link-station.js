@@ -2,8 +2,9 @@ const { Point } = require('./point');
 
 class LinkStationConstructorError extends Error {
   constructor() {
-    super('Invalid constructor parameters');
+    super();
     this.name = 'LinkStationConstructorError';
+    this.message = 'Invalid constructor parameters';
   }
 }
 
@@ -11,8 +12,9 @@ module.exports.LinkStationConstructorError = LinkStationConstructorError;
 
 class LinkStationPowerError extends Error {
   constructor() {
-    super('Invalid parameters');
+    super();
     this.name = 'LinkStationPowerError';
+    this.message = 'Invalid parameters';
   }
 }
 
